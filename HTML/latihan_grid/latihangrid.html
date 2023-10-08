@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Grid</title>
+    <style>
+      .container {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+      .satu {
+        grid-area: satu;
+        background: rgb(105, 104, 104);
+      }
+      .dua {
+        grid-area: dua;
+        background: rgb(105, 104, 104);
+      }
+      .tiga {
+        grid-area: tiga;
+        background:  rgb(105, 104, 104);
+      }
+      .empat {
+        grid-area: empat;
+        background: rgb(105, 104, 104);
+      }
+      .lima {
+        grid-area: lima;
+        background: rgb(105, 104, 104);
+      }
+      .enam {
+        grid-area: enam;
+        background: rgb(105, 104, 104);
+      }
+      .tujuh {
+        grid-area: tujuh;
+        background: rgb(105, 104, 104);
+      }
+      .delapan {
+        grid-area: delapan;
+        background: rgb(105, 104, 104);
+      }
+      .sembilan {
+        grid-area: sembilan;
+        background: rgb(105, 104, 104);
+      }
+      .sepuluh {
+        grid-area: sepuluh;
+        background:  rgb(105, 104, 104);
+      }
+      .sebelas {
+        grid-area: sebelas;
+        background: rgb(105, 104, 104);
+      }
+      .duabelas {
+        grid-area: duabelas;
+        background: rgb(105, 104, 104);
+      }
+      .tigabelas {
+        grid-area: tigabelas;
+        background: rgb(105, 104, 104);
+      }
+      .empatbelas {
+        grid-area: empatbelas;
+        background:  rgb(105, 104, 104);
+      }
+      .limabelas {
+        grid-area: limabelas;
+        background: rgb(105, 104, 104);
+      }
+      .enambelas {
+        grid-area: enambelas;
+        background: rgb(105, 104, 104);
+      }
+      .sa {
+        grid-area: sa;
+        background: rgb(105, 104, 104);
+      }
+      .du {
+        grid-area: du;
+        background:  rgb(105, 104, 104);
+      }
+      .tig {
+        grid-area: tig;
+        background:  rgb(105, 104, 104);
+      }
+      .em {
+        grid-area: em;
+        background:  rgb(105, 104, 104);
+      }
+      .lim {
+        grid-area: lim;
+        background:  rgb(105, 104, 104);
+      }
+      .en {
+        grid-area: en;
+        background:  rgb(105, 104, 104);
+      }
+      .c-1 {
+        grid-area: c-1;
+        background:  rgb(105, 104, 104);
+      }
+      .c-2 {
+        grid-area: c-2;
+        background:  rgb(105, 104, 104);
+      }
+      .c-3 {
+        grid-area: c-3;
+        background:  rgb(105, 104, 104);
+      }
+      .c-4 {
+        grid-area: c-4;
+        background:  rgb(105, 104, 104);
+      }
+      .cn-1 {
+        grid-area: cn-1;
+        background: rgb(105, 104, 104);
+      }
+      .cn-2 {
+        grid-area: cn-2;
+        background: rgb(105, 104, 104);
+      }
+      .cont-1 {
+        grid-area: cont-1;
+        background: rgb(105, 104, 104);
+      }
+      .cont-2{
+        grid-area: cont-2;
+        background:  rgb(105, 104, 104);
+      }
+      .foot {
+        grid-area: foot;
+        background:  rgb(105, 104, 104);
+      }
+      .header {
+        display: grid;
+        grid-template-columns: 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 4.40%;
+        grid-template-rows: 30px;
+        grid-template-areas: "satu dua tiga empat lima enam tujuh delapan sembilan sepuluh sebelas duabelas tigabelas empatbelas limabelas enambelas";
+        column-gap: 5px;
+        row-gap: 10px;
+        color: white;
+      }
+      .navigasi {
+        display: grid;
+        grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 14.70%;
+        grid-template-rows: 30px;
+        grid-template-areas: "sa du tig em lim en";
+        column-gap: 5px;
+        row-gap: 10px;
+        color: white;
+      }
+      .conten {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 23.75% ;
+        grid-template-rows: 30px;
+        grid-template-areas: "c-1 c-2 c-3 c-4";
+        column-gap: 5px;
+        row-gap: 10px;
+        color: white;
+      }
+      .conten-2 {
+        display: grid;
+        grid-template-columns: 30% 69.50%;
+        grid-template-rows: 30px;
+        grid-template-areas: "cn-1 cn-2";
+        column-gap: 5px;
+        row-gap: 10px;
+        color: white;
+      }
+      .conten-3{
+        display: grid;
+        grid-template-columns: 50% 49.50%;
+        grid-template-rows: 30px;
+        grid-template-areas: "cont-1 cont-2";
+        column-gap: 5px;
+        row-gap: 10px;
+        color: white;
+      }
+      .footer {
+        display: grid;
+        grid-template-columns: 99.90%;
+        grid-template-rows: 30px;
+        grid-template-areas: "foot";
+        column-gap: 5px;
+        row-gap: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div
+          class="satu"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="dua"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="tiga"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="empat"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="lima"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="enam"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="tujuh"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="delapan"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="sembilan"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="sepuluh"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="sebelas"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="duabelas"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="tigabelas"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="empatbelas"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="limabelas"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+        <div
+          class="enambelas"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          1
+        </div>
+      </div>
+      <div class="navigasi">
+        <div
+          class="sa"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          2
+        </div>
+        <div
+          class="du"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          2
+        </div>
+        <div
+          class="tig"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          2
+        </div>
+        <div
+          class="em"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          2
+        </div>
+        <div
+          class="lim"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          2
+        </div>
+        <div
+          class="en"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          2
+        </div>
+      </div>
+      <div class="conten">
+        <div
+          class="c-1"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          3
+        </div>
+        <div
+          class="c-2"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          3
+        </div>
+        <div
+          class="c-3"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          3
+        </div>
+        <div
+          class="c-4"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          3
+        </div>
+      </div>
+      <div class="conten-2">
+        <div
+          class="cn-1"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          3
+        </div>
+        <div
+          class="cn-2"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          9
+        </div>
+      </div>
+      <div class="conten-3">
+        <div
+          class="cont-1"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          9
+        </div>
+        <div
+          class="cont-2"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          9
+        </div>
+      </div>
+      <div class="footer">
+        <div class="foot" style="display: flex; justify-content: center; align-items: center" >12</div>
+      </div>
+    </div>
+  </body>
+</html>
